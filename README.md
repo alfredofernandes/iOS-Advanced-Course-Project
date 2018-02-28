@@ -1,5 +1,5 @@
-# iOS-Advance-Course-Project
-This project is a group activity from ProDigi Advance Course.
+# iOS-Advanced-Course-Project
+This project is a group activity from ProDigi Advanced Course.
 
 This project is using [Carthage](https://github.com/Carthage/Carthage) to handle the frameworks.
 
