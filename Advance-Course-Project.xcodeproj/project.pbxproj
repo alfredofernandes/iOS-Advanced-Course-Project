@@ -16,6 +16,19 @@
 		95A5B7D62047124900445D7C /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A5B7D52047124900445D7C /* StudentController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		954A6FF6204718B9003949D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		95A5B7BB20470FCD00445D7C /* Advance-Course-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advance-Course-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A5B7BE20470FCD00445D7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +117,7 @@
 				95A5B7B720470FCD00445D7C /* Sources */,
 				95A5B7B820470FCD00445D7C /* Frameworks */,
 				95A5B7B920470FCD00445D7C /* Resources */,
+				954A6FF6204718B9003949D4 /* Embed Frameworks */,
 				95A5B7D7204715C300445D7C /* Carthage Framework Release Script */,
 			);
 			buildRules = (
@@ -165,7 +179,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		95A5B7D7204715C300445D7C /* Carthage Framework Release Script */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -175,7 +189,7 @@
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
