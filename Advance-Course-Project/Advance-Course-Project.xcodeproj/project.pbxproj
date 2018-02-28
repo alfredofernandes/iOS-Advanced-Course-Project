@@ -104,6 +104,7 @@
 				95A5B7B720470FCD00445D7C /* Sources */,
 				95A5B7B820470FCD00445D7C /* Frameworks */,
 				95A5B7B920470FCD00445D7C /* Resources */,
+				95A5B7D7204715C300445D7C /* Carthage Framework Release Script */,
 			);
 			buildRules = (
 			);
@@ -160,6 +161,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95A5B7D7204715C300445D7C /* Carthage Framework Release Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = "Carthage Framework Release Script";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95A5B7B720470FCD00445D7C /* Sources */ = {
