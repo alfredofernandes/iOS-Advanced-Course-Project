@@ -34,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		954A6FFA204719A2003949D4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		95A5B7BB20470FCD00445D7C /* Advance-Course-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advance-Course-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95A5B7BB20470FCD00445D7C /* Advanced-Course-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advanced-Course-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A5B7BE20470FCD00445D7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95A5B7C020470FCD00445D7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95A5B7C320470FCD00445D7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		95A5B7B220470FCD00445D7C = {
 			isa = PBXGroup;
 			children = (
-				95A5B7BD20470FCD00445D7C /* Advance-Course-Project */,
+				95A5B7BD20470FCD00445D7C /* Advanced-Course-Project */,
 				954A6FFD204719B9003949D4 /* Frameworks */,
 				95A5B7BC20470FCD00445D7C /* Products */,
 			);
@@ -77,12 +77,12 @@
 		95A5B7BC20470FCD00445D7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95A5B7BB20470FCD00445D7C /* Advance-Course-Project.app */,
+				95A5B7BB20470FCD00445D7C /* Advanced-Course-Project.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		95A5B7BD20470FCD00445D7C /* Advance-Course-Project */ = {
+		95A5B7BD20470FCD00445D7C /* Advanced-Course-Project */ = {
 			isa = PBXGroup;
 			children = (
 				95A5B7CA20470FCD00445D7C /* Info.plist */,
@@ -93,7 +93,7 @@
 				95A5B7D22047119700445D7C /* Model */,
 				95A5B7D02047101800445D7C /* View */,
 			);
-			path = "Advance-Course-Project";
+			path = "Advanced-Course-Project";
 			sourceTree = "<group>";
 		};
 		95A5B7D02047101800445D7C /* View */ = {
@@ -124,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		95A5B7BA20470FCD00445D7C /* Advance-Course-Project */ = {
+		95A5B7BA20470FCD00445D7C /* Advanced-Course-Project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95A5B7CD20470FCD00445D7C /* Build configuration list for PBXNativeTarget "Advance-Course-Project" */;
+			buildConfigurationList = 95A5B7CD20470FCD00445D7C /* Build configuration list for PBXNativeTarget "Advanced-Course-Project" */;
 			buildPhases = (
 				95A5B7B720470FCD00445D7C /* Sources */,
 				95A5B7B820470FCD00445D7C /* Frameworks */,
@@ -138,9 +138,9 @@
 			);
 			dependencies = (
 			);
-			name = "Advance-Course-Project";
+			name = "Advanced-Course-Project";
 			productName = "Advance-Course-Project";
-			productReference = 95A5B7BB20470FCD00445D7C /* Advance-Course-Project.app */;
+			productReference = 95A5B7BB20470FCD00445D7C /* Advanced-Course-Project.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -159,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 95A5B7B620470FCD00445D7C /* Build configuration list for PBXProject "Advance-Course-Project" */;
+			buildConfigurationList = 95A5B7B620470FCD00445D7C /* Build configuration list for PBXProject "Advanced-Course-Project" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -172,7 +172,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95A5B7BA20470FCD00445D7C /* Advance-Course-Project */,
+				95A5B7BA20470FCD00445D7C /* Advanced-Course-Project */,
 			);
 		};
 /* End PBXProject section */
@@ -393,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95A5B7B620470FCD00445D7C /* Build configuration list for PBXProject "Advance-Course-Project" */ = {
+		95A5B7B620470FCD00445D7C /* Build configuration list for PBXProject "Advanced-Course-Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95A5B7CB20470FCD00445D7C /* Debug */,
@@ -402,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95A5B7CD20470FCD00445D7C /* Build configuration list for PBXNativeTarget "Advance-Course-Project" */ = {
+		95A5B7CD20470FCD00445D7C /* Build configuration list for PBXNativeTarget "Advanced-Course-Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95A5B7CE20470FCD00445D7C /* Debug */,
