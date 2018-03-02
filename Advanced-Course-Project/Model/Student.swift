@@ -8,8 +8,7 @@
 
 import ObjectMapper
 
-class Student: Mappable {
-    
+public class Student: Mappable {
     private var name: String?
     private var goal: String?
     private var term: String?
@@ -20,11 +19,11 @@ class Student: Mappable {
     private var education: String?
     private var certification: String?
     
-    required convenience init?(map: Map) {
+    public required convenience init?(map: Map) {
         self.init()
     }
-    
-    func mapping(map: Map) {
+
+    public func mapping(map: Map) {
         name            <- map["name"]
         goal            <- map["goal"]
         term            <- map["term"]
@@ -34,7 +33,5 @@ class Student: Mappable {
         linkedIn        <- map["linkedIn"]
         education       <- map["education"]
         certification   <- map["certification"]
-        
     }
-    
 }

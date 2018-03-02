@@ -11,6 +11,10 @@ import Foundation
 public class CoreFacade {
     private let studentController: StudentController
     
+    public var listOfStudents: [Student] {
+        return self.studentController.students
+    }
+    
     // MARK: Singleton
     public static let shared: CoreFacade = CoreFacade()
     
