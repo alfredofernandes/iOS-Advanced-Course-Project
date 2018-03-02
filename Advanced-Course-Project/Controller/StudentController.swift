@@ -7,13 +7,28 @@
 //
 
 import Foundation
+import Darwin
 
 internal class StudentController {
+    internal private(set) var students: [Student]!
+    
     internal init() {
-        // do nothing :)
+        self.students = generateStubStundents()
     }
     
     internal func stubMethod() -> String {
         return "It's alive!"
+    }
+    
+    private func generateStubStundents() -> [Student] {
+        var stubStudents = [Student]()
+        let randomInt = Int(arc4random_uniform(16))
+
+        for _ in 0...randomInt {
+            let student = Student()
+            stubStudents.append(student)
+        }
+        
+        return stubStudents
     }
 }
