@@ -145,8 +145,8 @@
 				95A5B7B720470FCD00445D7C /* Sources */,
 				95A5B7B820470FCD00445D7C /* Frameworks */,
 				95A5B7B920470FCD00445D7C /* Resources */,
-				95A5B7D7204715C300445D7C /* Carthage Framework Release Script */,
 				7946F3372048512700C62711 /* CopyFiles */,
+				95A5B7D7204715C300445D7C /* Carthage Framework Release Script */,
 			);
 			buildRules = (
 			);
@@ -216,6 +216,8 @@
 			);
 			name = "Carthage Framework Release Script";
 			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -372,7 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8M22RP3VPG;
+				DEVELOPMENT_TEAM = C8F6JTSD25;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -392,7 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8M22RP3VPG;
+				DEVELOPMENT_TEAM = C8F6JTSD25;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
