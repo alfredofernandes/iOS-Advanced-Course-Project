@@ -57,6 +57,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		456F7AD0204B608A00EE0694 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		954A6FFD204719B9003949D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +97,7 @@
 				95A5B7C020470FCD00445D7C /* ViewController.swift */,
 				95A5B7C520470FCD00445D7C /* Assets.xcassets */,
 				95A5B7D12047118F00445D7C /* Controller */,
-				95A5B7D22047119700445D7C /* Model */,
+				456F7AD0204B608A00EE0694 /* Model */,
 				95A5B7D02047101800445D7C /* View */,
 			);
 			path = "Advanced-Course-Project";
@@ -112,13 +119,6 @@
 				95A5B7D52047124900445D7C /* StudentController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		95A5B7D22047119700445D7C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,7 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C8F6JTSD25;
+				DEVELOPMENT_TEAM = D7365P545W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -375,7 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C8F6JTSD25;
+				DEVELOPMENT_TEAM = D7365P545W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
