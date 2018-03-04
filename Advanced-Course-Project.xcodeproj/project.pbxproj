@@ -10,6 +10,7 @@
 		16C46A3A204C390D008C74CC /* JobTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C46A38204C390D008C74CC /* JobTableCell.swift */; };
 		16C46A3B204C390D008C74CC /* JobTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C46A39204C390D008C74CC /* JobTableCell.xib */; };
 		16C46A3D204C3D11008C74CC /* JobListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C46A3C204C3D11008C74CC /* JobListViewController.swift */; };
+		16C46A3F204C3EF0008C74CC /* JobController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C46A3E204C3EF0008C74CC /* JobController.swift */; };
 		7926D474204855710019A480 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926D473204855710019A480 /* Company.swift */; };
 		7926D476204855780019A480 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926D475204855780019A480 /* Job.swift */; };
 		7946F336204850DD00C62711 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7946F335204850DC00C62711 /* ObjectMapper.framework */; };
@@ -44,6 +45,7 @@
 		16C46A38204C390D008C74CC /* JobTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableCell.swift; sourceTree = "<group>"; };
 		16C46A39204C390D008C74CC /* JobTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobTableCell.xib; sourceTree = "<group>"; };
 		16C46A3C204C3D11008C74CC /* JobListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListViewController.swift; sourceTree = "<group>"; };
+		16C46A3E204C3EF0008C74CC /* JobController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobController.swift; sourceTree = "<group>"; };
 		7926D473204855710019A480 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		7926D475204855780019A480 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		7946F335204850DC00C62711 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				95A5B7D3204711EA00445D7C /* CoreFacade.swift */,
 				95A5B7D52047124900445D7C /* StudentController.swift */,
+				16C46A3E204C3EF0008C74CC /* JobController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16C46A3A204C390D008C74CC /* JobTableCell.swift in Sources */,
+				16C46A3F204C3EF0008C74CC /* JobController.swift in Sources */,
 				95A5B7D4204711EA00445D7C /* CoreFacade.swift in Sources */,
 				95A5B7D62047124900445D7C /* StudentController.swift in Sources */,
 				95A5B7C120470FCD00445D7C /* ViewController.swift in Sources */,
