@@ -9,15 +9,15 @@
 import ObjectMapper
 
 public class Student: Mappable {
-    private var name: String?
-    private var goal: String?
-    private var term: String?
-    private var photo: String?
-    private var github: String?
-    private var project: String?
-    private var linkedIn: String?
-    private var education: String?
-    private var certification: String?
+    public private(set) var name: String?
+    public private(set) var goal: String?
+    public private(set) var term: String?
+    public private(set) var photo: String?
+    public private(set) var github: String?
+    public private(set) var project: String?
+    public private(set) var linkedIn: String?
+    public private(set) var education: String?
+    public private(set) var certification: String?
     
     public required convenience init?(map: Map) {
         self.init()

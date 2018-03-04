@@ -10,13 +10,13 @@ import ObjectMapper
 
 class Company: Mappable {
     
-    private var jobs: [Job]?
-    private var name: String?
-    private var size: String?
-    private var photo: String?
-    private var contact: String?
-    private var website: String?
-    private var techStack: String?
+    public private(set) var jobs: [Job]?
+    public private(set) var name: String?
+    public private(set) var size: String?
+    public private(set) var photo: String?
+    public private(set) var contact: String?
+    public private(set) var website: String?
+    public private(set) var techStack: String?
     
     required convenience init?(map: Map) {
         self.init()
