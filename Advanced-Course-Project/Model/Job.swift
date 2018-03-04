@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-class Job: Mappable {
+public class Job: Mappable {
     
     public private(set) var title: String?
     public private(set) var salary: String?
@@ -17,11 +17,11 @@ class Job: Mappable {
     public private(set) var postingDate: String?
     public private(set) var description: String?
     
-    required convenience init?(map: Map) {
+    public required convenience init?(map: Map) {
         self.init()
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         title       <- map["title"]
         description <- map["description"]
         startDate   <- map["startDate"]

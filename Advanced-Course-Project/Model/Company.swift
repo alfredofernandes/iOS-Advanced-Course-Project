@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-class Company: Mappable {
+public class Company: Mappable {
     
     public private(set) var jobs: [Job]?
     public private(set) var name: String?
@@ -18,11 +18,11 @@ class Company: Mappable {
     public private(set) var website: String?
     public private(set) var techStack: String?
     
-    required convenience init?(map: Map) {
+    public required convenience init?(map: Map) {
         self.init()
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         jobs        <- map["jobs"]
         name        <- map["name"]
         size        <- map["size"]
