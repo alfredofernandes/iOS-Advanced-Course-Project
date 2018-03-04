@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-class Student {
+class Student: Mappable {
     
     private var name: String?
     private var email: String?
