@@ -34,4 +34,40 @@ public class Student: Mappable {
         education       <- map["education"]
         certification   <- map["certification"]
     }
+    
+    public func setName(_ name: String) {
+        self.name = name
+    }
+    
+    public func setGoal(_ goal: String) {
+        self.goal = goal
+    }
+    
+    public func setTerm(_ term: String) {
+        self.term = term
+    }
+    
+    public func setPhoto(_ photo: String) {
+        self.photo = photo
+    }
+    
+    public func setGithub(_ github: String) {
+        self.github = github
+    }
+    
+    public func setProject(_ project: String) {
+        self.project = project
+    }
+    
+    public func setLinkedIn(_ linkedIn: String) {
+        self.linkedIn = linkedIn
+    }
+    
+    public func setEducation(_ education: String) {
+        self.education = education
+    }
+    
+    public func setCertification(_ certification: String) {
+        self.certification = certification
+    }
 }

@@ -30,5 +30,28 @@ class Job: Mappable {
         benefits    <- map["benefits"]
     }
     
+    public func setTitle(_ title: String) {
+        self.title = title
+    }
+    
+    public func setDescription(_ description: String) {
+        self.description = description
+    }
+    
+    public func setStartDate(_ startDate: String) {
+        self.startDate = startDate
+    }
+    
+    public func setPostingDate(_ postingDate: String) {
+        self.postingDate = postingDate
+    }
+    
+    public func setSalary(_ salary: String) {
+        self.salary = salary
+    }
+    
+    public func setBenefits(_ benefits: String) {
+        self.benefits = benefits
+    }
 }
 

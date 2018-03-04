@@ -32,4 +32,31 @@ class Company: Mappable {
         techStack   <- map["techStack"]
     }
     
+    public func setJobs(_ jobs: [Job]) {
+        self.jobs = jobs
+    }
+    
+    public func setName(_ name: String) {
+        self.name = name
+    }
+    
+    public func setSize(_ size: String) {
+        self.size = size
+    }
+    
+    public func setPhoto(_ photo: String) {
+        self.photo = photo
+    }
+    
+    public func setContact(_ contact: String) {
+        self.contact = contact
+    }
+    
+    public func setWebsite(_ website: String) {
+        self.website = website
+    }
+    
+    public func setTechStack(_ techStack: String) {
+        self.techStack = techStack
+    }
 }
