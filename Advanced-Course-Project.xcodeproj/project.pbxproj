@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		456F7AD2204B70D200EE0694 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F7AD1204B70D200EE0694 /* Student.swift */; };
 		456F7AD4204B710700EE0694 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F7AD3204B710700EE0694 /* Company.swift */; };
+		456F7AD6204B712E00EE0694 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F7AD5204B712E00EE0694 /* Job.swift */; };
 		954A6FFB204719A2003949D4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954A6FFA204719A2003949D4 /* Alamofire.framework */; };
 		954A6FFC204719A2003949D4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 954A6FFA204719A2003949D4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95A5B7BF20470FCD00445D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A5B7BE20470FCD00445D7C /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		456F7AD1204B70D200EE0694 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		456F7AD3204B710700EE0694 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		456F7AD5204B712E00EE0694 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		954A6FFA204719A2003949D4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		95A5B7BB20470FCD00445D7C /* Advanced-Course-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advanced-Course-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A5B7BE20470FCD00445D7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			children = (
 				456F7AD1204B70D200EE0694 /* Student.swift */,
 				456F7AD3204B710700EE0694 /* Company.swift */,
+				456F7AD5204B712E00EE0694 /* Job.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				95A5B7C120470FCD00445D7C /* ViewController.swift in Sources */,
 				456F7AD2204B70D200EE0694 /* Student.swift in Sources */,
 				95A5B7BF20470FCD00445D7C /* AppDelegate.swift in Sources */,
+				456F7AD6204B712E00EE0694 /* Job.swift in Sources */,
 				456F7AD4204B710700EE0694 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
