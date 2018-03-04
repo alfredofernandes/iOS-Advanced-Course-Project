@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-class Company {
+class Company: Mappable {
     
     private var name: String?
     private var address: String?
