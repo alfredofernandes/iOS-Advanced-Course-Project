@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		456F7AD2204B70D200EE0694 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F7AD1204B70D200EE0694 /* Student.swift */; };
 		954A6FFB204719A2003949D4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954A6FFA204719A2003949D4 /* Alamofire.framework */; };
 		954A6FFC204719A2003949D4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 954A6FFA204719A2003949D4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95A5B7BF20470FCD00445D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A5B7BE20470FCD00445D7C /* AppDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		456F7AD1204B70D200EE0694 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		954A6FFA204719A2003949D4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		95A5B7BB20470FCD00445D7C /* Advanced-Course-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advanced-Course-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A5B7BE20470FCD00445D7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		456F7AD0204B608A00EE0694 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				456F7AD1204B70D200EE0694 /* Student.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				95A5B7D4204711EA00445D7C /* CoreFacade.swift in Sources */,
 				95A5B7D62047124900445D7C /* StudentController.swift in Sources */,
 				95A5B7C120470FCD00445D7C /* ViewController.swift in Sources */,
+				456F7AD2204B70D200EE0694 /* Student.swift in Sources */,
 				95A5B7BF20470FCD00445D7C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
