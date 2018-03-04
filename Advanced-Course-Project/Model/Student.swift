@@ -6,8 +6,37 @@
 //  Copyright © 2018 ProDigi-Development. All rights reserved.
 //
 
-import Foundation
+import ObjectMapper
 
 class Student {
     
+    private var name: String?
+    private var photo: String?
+    private var linkedin: String?
+    private var github: String?
+    private var skills: String?
+    private var goals: String?
+    private var projectsDone: String?
+    private var programTranscript: String?
+    private var previousTraining: String?
+    private var volunteeringExpierence: String?
+    private var workStatusInCanada: String?
+    
+    public required convenience init(map: Map) {
+        self.init()
+    }
+    
+    public func mapping(map: Map) {
+        name                    <- map["name"]
+        photo                   <- map["photo"]
+        linkedin                <- map["linkedin"]
+        github                  <- map["github"]
+        skills                  <- map["skills"]
+        goals                   <- map["goals"]
+        projectsDone            <- map["projectsDone"]
+        programTranscript       <- map["programTranscript"]
+        previousTraining        <- map["previousTraining"]
+        volunteeringExpierence  <- map["volunteeringExpierence"]
+        workStatusInCanada      <- map["workStatusInCanada"]
+    }
 }
