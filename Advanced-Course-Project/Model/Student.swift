@@ -11,6 +11,8 @@ import ObjectMapper
 class Student {
     
     private var name: String?
+    private var email: String?
+    private var phone: String?
     private var photo: String?
     private var linkedin: String?
     private var github: String?
@@ -28,6 +30,8 @@ class Student {
     
     public func mapping(map: Map) {
         name                    <- map["name"]
+        email                   <- map["email"]
+        phone                   <- map["phone"]
         photo                   <- map["photo"]
         linkedin                <- map["linkedin"]
         github                  <- map["github"]
