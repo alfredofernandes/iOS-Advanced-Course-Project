@@ -28,7 +28,8 @@ internal class JobController {
         for i in 0...randomInt {
             let job = Job()
             job.setTitle("Title of job \(i)")
-            job.setStartDate("\(1+i)/\(3+i/2)/2018")
+            job.setDescription("Description of job \(i)")
+            job.setPostingDate("\(10+i)/0\(1+i/8)/2018")
             stubJobs.append(job)
         }
         
