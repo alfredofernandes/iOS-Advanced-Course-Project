@@ -360,7 +360,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "Advance-Course-Project/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Advanced-Course-Project/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.prodigi.Advance-Course-Project";
@@ -380,7 +380,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "Advance-Course-Project/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Advanced-Course-Project/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.prodigi.Advance-Course-Project";
