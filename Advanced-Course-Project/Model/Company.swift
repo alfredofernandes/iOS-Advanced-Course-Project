@@ -20,6 +20,7 @@ class Company {
     private var techStack: String?
     private var sizeCompany: String?
     private var rating: Int?
+    private var job: [Job]?
     
     public required convenience init(map: Map) {
         self.init()
@@ -36,5 +37,6 @@ class Company {
         techStack   <- map["techStack"]
         sizeCompany <- map["sizeCompany"]
         rating      <- map["rating"]
+        job         <- map["job"]
     }
 }
