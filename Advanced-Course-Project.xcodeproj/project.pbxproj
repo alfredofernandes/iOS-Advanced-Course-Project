@@ -10,6 +10,8 @@
 		456F7AD2204B70D200EE0694 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F7AD1204B70D200EE0694 /* Student.swift */; };
 		456F7AD4204B710700EE0694 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F7AD3204B710700EE0694 /* Company.swift */; };
 		456F7AD6204B712E00EE0694 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F7AD5204B712E00EE0694 /* Job.swift */; };
+		456F7AD8204CB94600EE0694 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F7AD7204CB94600EE0694 /* ObjectMapper.framework */; };
+		456F7AD9204CB94600EE0694 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 456F7AD7204CB94600EE0694 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		954A6FFB204719A2003949D4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954A6FFA204719A2003949D4 /* Alamofire.framework */; };
 		954A6FFC204719A2003949D4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 954A6FFA204719A2003949D4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95A5B7BF20470FCD00445D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A5B7BE20470FCD00445D7C /* AppDelegate.swift */; };
@@ -28,6 +30,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				456F7AD9204CB94600EE0694 /* ObjectMapper.framework in Embed Frameworks */,
 				954A6FFC204719A2003949D4 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -39,6 +42,7 @@
 		456F7AD1204B70D200EE0694 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		456F7AD3204B710700EE0694 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		456F7AD5204B712E00EE0694 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		456F7AD7204CB94600EE0694 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		954A6FFA204719A2003949D4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		95A5B7BB20470FCD00445D7C /* Advanced-Course-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advanced-Course-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A5B7BE20470FCD00445D7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456F7AD8204CB94600EE0694 /* ObjectMapper.framework in Frameworks */,
 				954A6FFB204719A2003949D4 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +89,7 @@
 		95A5B7B220470FCD00445D7C = {
 			isa = PBXGroup;
 			children = (
+				456F7AD7204CB94600EE0694 /* ObjectMapper.framework */,
 				95A5B7BD20470FCD00445D7C /* Advanced-Course-Project */,
 				954A6FFD204719B9003949D4 /* Frameworks */,
 				95A5B7BC20470FCD00445D7C /* Products */,
@@ -207,10 +213,12 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 			);
 			name = "Carthage Framework Release Script";
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
