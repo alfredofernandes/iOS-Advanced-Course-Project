@@ -9,15 +9,15 @@
 import ObjectMapper
 
 public class Student: Mappable {
-    private var name: String?
-    private var goal: String?
-    private var term: String?
-    private var photo: String?
-    private var github: String?
-    private var project: String?
-    private var linkedIn: String?
-    private var education: String?
-    private var certification: String?
+    public private(set) var name: String?
+    public private(set) var goal: String?
+    public private(set) var term: String?
+    public private(set) var photo: String?
+    public private(set) var github: String?
+    public private(set) var project: String?
+    public private(set) var linkedIn: String?
+    public private(set) var education: String?
+    public private(set) var certification: String?
     
     public required convenience init?(map: Map) {
         self.init()
@@ -33,5 +33,41 @@ public class Student: Mappable {
         linkedIn        <- map["linkedIn"]
         education       <- map["education"]
         certification   <- map["certification"]
+    }
+    
+    public func setName(_ name: String) {
+        self.name = name
+    }
+    
+    public func setGoal(_ goal: String) {
+        self.goal = goal
+    }
+    
+    public func setTerm(_ term: String) {
+        self.term = term
+    }
+    
+    public func setPhoto(_ photo: String) {
+        self.photo = photo
+    }
+    
+    public func setGithub(_ github: String) {
+        self.github = github
+    }
+    
+    public func setProject(_ project: String) {
+        self.project = project
+    }
+    
+    public func setLinkedIn(_ linkedIn: String) {
+        self.linkedIn = linkedIn
+    }
+    
+    public func setEducation(_ education: String) {
+        self.education = education
+    }
+    
+    public func setCertification(_ certification: String) {
+        self.certification = certification
     }
 }
