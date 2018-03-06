@@ -10,6 +10,7 @@ import ObjectMapper
 
 public class Student: Mappable {
     public private(set) var name: String?
+    public private(set) var email: String?
     public private(set) var goal: String?
     public private(set) var term: String?
     public private(set) var photo: String?
@@ -25,6 +26,7 @@ public class Student: Mappable {
 
     public func mapping(map: Map) {
         name            <- map["name"]
+        email           <- map["email"]
         goal            <- map["goal"]
         term            <- map["term"]
         photo           <- map["photo"]
