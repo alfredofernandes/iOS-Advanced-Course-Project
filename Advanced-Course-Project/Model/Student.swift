@@ -14,10 +14,12 @@ public class Student: Mappable {
     public private(set) var goal: String?
     public private(set) var term: String?
     public private(set) var photo: String?
+    public private(set) var resume: String?
     public private(set) var github: String?
     public private(set) var project: String?
     public private(set) var linkedIn: String?
     public private(set) var education: String?
+    public private(set) var isVerified: String?
     public private(set) var certification: String?
     
     public required convenience init?(map: Map) {
@@ -54,6 +56,10 @@ public class Student: Mappable {
         self.photo = photo
     }
     
+    public func setResume(_ resume: String) {
+        self.resume = resume
+    }
+    
     public func setGithub(_ github: String) {
         self.github = github
     }
@@ -68,6 +74,10 @@ public class Student: Mappable {
     
     public func setEducation(_ education: String) {
         self.education = education
+    }
+    
+    public func setIsVerified(_ isVerified: String) {
+        self.isVerified = isVerified
     }
     
     public func setCertification(_ certification: String) {
