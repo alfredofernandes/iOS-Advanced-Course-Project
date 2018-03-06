@@ -9,15 +9,18 @@
 import ObjectMapper
 
 public class Student: Mappable {
+    
     public private(set) var name: String?
     public private(set) var email: String?
     public private(set) var goal: String?
     public private(set) var term: String?
     public private(set) var photo: String?
+    public private(set) var resume: String?
     public private(set) var github: String?
     public private(set) var project: String?
     public private(set) var linkedIn: String?
     public private(set) var education: String?
+    public private(set) var isVerified: String?
     public private(set) var certification: String?
     
     public required convenience init?(map: Map) {
@@ -40,10 +43,12 @@ public class Student: Mappable {
         goal            <- map["goal"]
         term            <- map["term"]
         photo           <- map["photo"]
+        resume          <- map["resume"]
         github          <- map["github"]
         project         <- map["project"]
         linkedIn        <- map["linkedIn"]
         education       <- map["education"]
+        isVerified      <- map["isVerified"]
         certification   <- map["certification"]
     }
 }
