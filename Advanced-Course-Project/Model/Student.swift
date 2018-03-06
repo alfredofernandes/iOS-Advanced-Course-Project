@@ -10,6 +10,7 @@ import ObjectMapper
 
 public class Student: Mappable {
     public private(set) var name: String?
+    public private(set) var email: String?
     public private(set) var goal: String?
     public private(set) var term: String?
     public private(set) var photo: String?
@@ -22,9 +23,20 @@ public class Student: Mappable {
     public required convenience init?(map: Map) {
         self.init()
     }
+    
+    private init() {
+        // Do NOT use this constructor
+    }
+    
+    // Constructor for minimal object
+    internal init(withName name: String, andEmail email: String) {
+        self.name = name
+        self.email = email
+    }
 
     public func mapping(map: Map) {
         name            <- map["name"]
+        email           <- map["email"]
         goal            <- map["goal"]
         term            <- map["term"]
         photo           <- map["photo"]
@@ -33,41 +45,5 @@ public class Student: Mappable {
         linkedIn        <- map["linkedIn"]
         education       <- map["education"]
         certification   <- map["certification"]
-    }
-    
-    public func setName(_ name: String) {
-        self.name = name
-    }
-    
-    public func setGoal(_ goal: String) {
-        self.goal = goal
-    }
-    
-    public func setTerm(_ term: String) {
-        self.term = term
-    }
-    
-    public func setPhoto(_ photo: String) {
-        self.photo = photo
-    }
-    
-    public func setGithub(_ github: String) {
-        self.github = github
-    }
-    
-    public func setProject(_ project: String) {
-        self.project = project
-    }
-    
-    public func setLinkedIn(_ linkedIn: String) {
-        self.linkedIn = linkedIn
-    }
-    
-    public func setEducation(_ education: String) {
-        self.education = education
-    }
-    
-    public func setCertification(_ certification: String) {
-        self.certification = certification
     }
 }
