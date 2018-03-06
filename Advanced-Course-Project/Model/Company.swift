@@ -12,11 +12,13 @@ public class Company: Mappable {
     
     public private(set) var jobs: [Job]?
     public private(set) var name: String?
+    public private(set) var logo: String?
     public private(set) var size: String?
     public private(set) var photo: String?
     public private(set) var contact: String?
     public private(set) var website: String?
     public private(set) var techStack: String?
+    public private(set) var description: String?
     
     public required convenience init?(map: Map) {
         self.init()
@@ -41,6 +43,10 @@ public class Company: Mappable {
         self.name = name
     }
     
+    public func setLogo(_ logo: String) {
+        self.logo = logo
+    }
+    
     public func setSize(_ size: String) {
         self.size = size
     }
@@ -59,5 +65,9 @@ public class Company: Mappable {
     
     public func setTechStack(_ techStack: String) {
         self.techStack = techStack
+    }
+    
+    public func setDescription(_ description: String) {
+        self.description = description
     }
 }
