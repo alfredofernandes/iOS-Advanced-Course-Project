@@ -23,6 +23,16 @@ public class Student: Mappable {
     public required convenience init?(map: Map) {
         self.init()
     }
+    
+    private init() {
+        // Do NOT use this constructor
+    }
+    
+    // Constructor for minimal object
+    internal init(withName name: String, andEmail email: String) {
+        self.name = name
+        self.email = email
+    }
 
     public func mapping(map: Map) {
         name            <- map["name"]
