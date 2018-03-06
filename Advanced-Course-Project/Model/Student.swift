@@ -2,45 +2,48 @@
 //  Student.swift
 //  Advanced-Course-Project
 //
-//  Created by Alfredo Fernandes on 2018-03-03.
+//  Created by Guilherme Crozariol on 2018-03-01.
 //  Copyright © 2018 ProDigi-Development. All rights reserved.
 //
 
 import ObjectMapper
 
 public class Student: Mappable {
+    public private(set) var name: String?
+    public private(set) var email: String?
+    public private(set) var goal: String?
+    public private(set) var term: String?
+    public private(set) var photo: String?
+    public private(set) var github: String?
+    public private(set) var project: String?
+    public private(set) var linkedIn: String?
+    public private(set) var education: String?
+    public private(set) var certification: String?
     
-    private var name: String?
-    private var email: String?
-    private var phone: String?
-    private var photo: String?
-    private var linkedin: String?
-    private var github: String?
-    private var skills: String?
-    private var goals: String?
-    private var projectsDone: String?
-    private var programTranscript: String?
-    private var previousTraining: String?
-    private var volunteeringExpierence: String?
-    private var workStatusInCanada: String?
-    
-    public required convenience init(map: Map) {
+    public required convenience init?(map: Map) {
         self.init()
     }
     
+    private init() {
+        // Do NOT use this constructor
+    }
+    
+    // Constructor for minimal object
+    internal init(withName name: String, andEmail email: String) {
+        self.name = name
+        self.email = email
+    }
+
     public func mapping(map: Map) {
-        name                    <- map["name"]
-        email                   <- map["email"]
-        phone                   <- map["phone"]
-        photo                   <- map["photo"]
-        linkedin                <- map["linkedin"]
-        github                  <- map["github"]
-        skills                  <- map["skills"]
-        goals                   <- map["goals"]
-        projectsDone            <- map["projectsDone"]
-        programTranscript       <- map["programTranscript"]
-        previousTraining        <- map["previousTraining"]
-        volunteeringExpierence  <- map["volunteeringExpierence"]
-        workStatusInCanada      <- map["workStatusInCanada"]
+        name            <- map["name"]
+        email           <- map["email"]
+        goal            <- map["goal"]
+        term            <- map["term"]
+        photo           <- map["photo"]
+        github          <- map["github"]
+        project         <- map["project"]
+        linkedIn        <- map["linkedIn"]
+        education       <- map["education"]
+        certification   <- map["certification"]
     }
 }
