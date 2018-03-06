@@ -10,6 +10,7 @@ import Foundation
 
 public class CoreFacade {
     private let studentController: StudentController
+    private let jobController: JobController
     
     public var listOfStudents: [Student] {
         return self.studentController.students
@@ -20,11 +21,16 @@ public class CoreFacade {
     
     private init() {
         self.studentController = StudentController()
+        self.jobController = JobController()
     }
     
     // MARK: Public Methods
     
     public func testArchitecture() -> String {
         return self.studentController.stubMethod()
+    }
+    
+    public func fetchJobs() -> [Job] {
+        return self.jobController.fetchJobs()
     }
 }
