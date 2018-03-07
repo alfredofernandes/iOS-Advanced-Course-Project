@@ -9,7 +9,7 @@
 import ObjectMapper
 
 public class Job: Mappable {
-    
+    public private(set) var objectId: Int?
     public private(set) var title: String?
     public private(set) var salary: String?
     public private(set) var benefits: String?
@@ -22,6 +22,7 @@ public class Job: Mappable {
     }
     
     public func mapping(map: Map) {
+        objectId       <- map["objectId"]
         title       <- map["title"]
         salary      <- map["salary"]
         benefits    <- map["benefits"]
@@ -52,5 +53,15 @@ public class Job: Mappable {
     
     public func setBenefits(_ benefits: String) {
         self.benefits = benefits
+    }
+    
+    public func equalTo(rhs: Job) -> Bool {
+        return self.objectId == rhs.objectId
+    }
+}
+
+extension Job: Equatable {
+    public static func == (lhs: Job, rhs: Job) -> Bool {
+        return lhs.equalTo(rhs: rhs)
     }
 }
