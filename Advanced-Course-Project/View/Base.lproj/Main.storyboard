@@ -60,7 +60,7 @@
         <!--Job Details-->
         <scene sceneID="hdd-iy-vYQ">
             <objects>
-                <viewController id="HVh-nI-wEJ" sceneMemberID="viewController">
+                <viewController id="HVh-nI-wEJ" customClass="JobDetailVC" customModule="Advanced_Course_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fYh-rO-ZWL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +183,14 @@
                         <viewLayoutGuide key="safeArea" id="vbt-30-zNF"/>
                     </view>
                     <navigationItem key="navigationItem" title="Job Details" id="av5-cn-aTy"/>
+                    <connections>
+                        <outlet property="benefitsLabel" destination="eTH-md-3es" id="7Xp-Y3-BMO"/>
+                        <outlet property="descriptionLabel" destination="ZG3-4m-UOX" id="7jd-EW-v21"/>
+                        <outlet property="postingDateLabel" destination="U13-uV-r3z" id="CEY-hm-RAd"/>
+                        <outlet property="salaryLabel" destination="Ybo-ba-MW9" id="ljx-cI-Yjg"/>
+                        <outlet property="startDateLabel" destination="qU6-nF-MXS" id="IY3-O0-RWm"/>
+                        <outlet property="titleLabel" destination="468-xq-Ad1" id="xif-r0-aQl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VlF-dQ-w8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
