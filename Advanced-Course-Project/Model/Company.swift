@@ -13,11 +13,13 @@ public class Company: Mappable {
     public private(set) var jobs: [Job]?
     public private(set) var name: String?
     public private(set) var email: String?
+    public private(set) var logo: String?
     public private(set) var size: String?
     public private(set) var photo: String?
     public private(set) var contact: String?
     public private(set) var website: String?
     public private(set) var techStack: String?
+    public private(set) var description: String?
     
     public required convenience init?(map: Map) {
         self.init()
@@ -37,10 +39,12 @@ public class Company: Mappable {
         jobs        <- map["jobs"]
         name        <- map["name"]
         email       <- map["email"]
+        logo        <- map["logo"]
         size        <- map["size"]
         photo       <- map["photo"]
         contact     <- map["contact"]
         website     <- map["website"]
         techStack   <- map["techStack"]
+        description <- map["description"]
     }
 }
