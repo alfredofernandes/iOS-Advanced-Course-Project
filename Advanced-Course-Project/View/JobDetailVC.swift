@@ -17,4 +17,14 @@ class JobDetailVC: UIViewController {
     @IBOutlet weak var postingDateLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        titleLabel.text = ""
+        salaryLabel.text = ""
+        benefitsLabel.text = ""
+        startDateLabel.text = ""
+        postingDateLabel.text = ""
+        descriptionLabel.text = ""
+    }
+    
 }
