@@ -54,5 +54,15 @@ public class Job: Mappable {
     public func setBenefits(_ benefits: String) {
         self.benefits = benefits
     }
+    
+    public func equalTo(rhs: Job) -> Bool {
+        return self.objectId == rhs.objectId
+    }
+}
+
+extension Job: Equatable {
+    public static func == (lhs: Job, rhs: Job) -> Bool {
+        return lhs.equalTo(rhs: rhs)
+    }
 }
 
