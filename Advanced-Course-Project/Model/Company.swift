@@ -47,4 +47,14 @@ public class Company: Mappable {
         techStack   <- map["techStack"]
         description <- map["description"]
     }
+    
+    public func equalTo(rhs: Company) -> Bool {
+        return self.email == rhs.email
+    }
+}
+
+extension Company: Equatable {
+    public static func == (lhs: Company, rhs: Company) -> Bool {
+        return lhs.equalTo(rhs: rhs)
+    }
 }
