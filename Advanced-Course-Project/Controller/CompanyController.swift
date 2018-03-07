@@ -19,6 +19,23 @@ public class CompanyController {
         return generateStubCompanies()
     }
     
+    public func getCompanyBy(job: Job) -> Company? {
+        let companyList = self.generateStubCompanies()
+
+        for company in companyList {
+            if let jobs = company.jobs {
+                if jobs.contains(job) {
+                    return company
+                }
+            } else {
+                // TOOD: Handle error scenario
+                print("fuck 👹")
+            }
+        }
+        
+        return nil
+    }
+    
     private func generateStubCompanies() -> [Company] {
         var stubCompanies = [Company]()
         let randomInt = Int(arc4random_uniform(16))
