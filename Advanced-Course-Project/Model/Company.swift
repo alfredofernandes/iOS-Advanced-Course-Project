@@ -12,6 +12,7 @@ public class Company: Mappable {
     
     public private(set) var jobs: [Job]?
     public private(set) var name: String?
+    public private(set) var email: String?
     public private(set) var logo: String?
     public private(set) var size: String?
     public private(set) var photo: String?
@@ -24,50 +25,36 @@ public class Company: Mappable {
         self.init()
     }
     
+    private init() {
+        // Do NOT use this constructor
+    }
+    
+    // Constructor for minimal object
+    internal init(withName name: String, andEmail email: String) {
+        self.name = name
+        self.email = email
+    }
+    
     public func mapping(map: Map) {
         jobs        <- map["jobs"]
         name        <- map["name"]
+        email       <- map["email"]
         logo        <- map["logo"]
         size        <- map["size"]
+        photo       <- map["photo"]
         contact     <- map["contact"]
         website     <- map["website"]
         techStack   <- map["techStack"]
         description <- map["description"]
     }
     
-    public func setJobs(_ jobs: [Job]) {
-        self.jobs = jobs
+    public func equalTo(rhs: Company) -> Bool {
+        return self.email == rhs.email
     }
-    
-    public func setName(_ name: String) {
-        self.name = name
-    }
-    
-    public func setLogo(_ logo: String) {
-        self.logo = logo
-    }
-    
-    public func setSize(_ size: String) {
-        self.size = size
-    }
-    
-    public func setPhoto(_ photo: String) {
-        self.photo = photo
-    }
-    
-    public func setContact(_ contact: String) {
-        self.contact = contact
-    }
-    
-    public func setWebsite(_ website: String) {
-        self.website = website
-    }
-    
-    public func setTechStack(_ techStack: String) {
-        self.techStack = techStack
-    }
-    
-    public func setDescription(_ description: String) {
-        self.description = description
+}
+
+extension Company: Equatable {
+    public static func == (lhs: Company, rhs: Company) -> Bool {
+        return lhs.equalTo(rhs: rhs)
     }
 }
