@@ -197,11 +197,27 @@
                         <outlet property="salaryLabel" destination="Ybo-ba-MW9" id="ljx-cI-Yjg"/>
                         <outlet property="startDateLabel" destination="qU6-nF-MXS" id="IY3-O0-RWm"/>
                         <outlet property="titleLabel" destination="468-xq-Ad1" id="xif-r0-aQl"/>
+                        <segue destination="5XF-st-s67" kind="show" identifier="showCompanyDetail" id="Ukh-r6-AQk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VlF-dQ-w8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1098" y="116"/>
+        </scene>
+        <!--Company Detail-->
+        <scene sceneID="J7y-au-0Mn">
+            <objects>
+                <viewController title="Company Detail" id="5XF-st-s67" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d93-zg-bOo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7ZM-EU-Kkp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eih-0B-Cfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yQq-j9-Ix5">
