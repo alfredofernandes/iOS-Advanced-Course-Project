@@ -9,8 +9,10 @@
 import Foundation
 
 public class CoreFacade {
-    private let studentController: StudentController
+    
     private let jobController: JobController
+    private let studentController: StudentController
+    private let companyController: CompanyController
     
     public var listOfStudents: [Student] {
         return self.studentController.students
@@ -20,8 +22,9 @@ public class CoreFacade {
     public static let shared: CoreFacade = CoreFacade()
     
     private init() {
-        self.studentController = StudentController()
         self.jobController = JobController()
+        self.studentController = StudentController()
+        self.companyController = CompanyController.shared
     }
     
     // MARK: Public Methods
@@ -35,5 +38,9 @@ public class CoreFacade {
     
     public func getJob() -> Job {
         return self.jobController.fetchJob()
+    }
+    
+    public func getCompany() -> Company {
+        return self.companyController.generateStubCompany()
     }
 }
