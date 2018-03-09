@@ -25,12 +25,15 @@ public class CoreFacade {
     }
     
     // MARK: Public Methods
-    
     public func testArchitecture() -> String {
         return self.studentController.stubMethod()
     }
     
     public func fetchJobs() -> [Job] {
         return self.jobController.fetchJobs()
+    }
+    
+    public func getJob() -> Job {
+        return self.jobController.fetchJob()
     }
 }
