@@ -57,7 +57,7 @@
             </objects>
             <point key="canvasLocation" x="374" y="117"/>
         </scene>
-        <!--Job Details-->
+        <!--Job Detail-->
         <scene sceneID="hdd-iy-vYQ">
             <objects>
                 <viewController id="HVh-nI-wEJ" customClass="JobDetailViewController" customModule="Advanced_Course_Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -189,7 +189,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vbt-30-zNF"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Job Details" id="av5-cn-aTy"/>
+                    <navigationItem key="navigationItem" title="Job Detail" id="av5-cn-aTy"/>
                     <connections>
                         <outlet property="benefitsLabel" destination="eTH-md-3es" id="7Xp-Y3-BMO"/>
                         <outlet property="descriptionLabel" destination="ZG3-4m-UOX" id="7jd-EW-v21"/>
