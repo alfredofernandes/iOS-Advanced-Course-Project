@@ -211,7 +211,7 @@
         <!--Company Detail-->
         <scene sceneID="J7y-au-0Mn">
             <objects>
-                <viewController title="Company Detail" id="5XF-st-s67" sceneMemberID="viewController">
+                <viewController title="Company Detail" id="5XF-st-s67" customClass="CompanyDetailViewController" customModule="Advanced_Course_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d93-zg-bOo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
