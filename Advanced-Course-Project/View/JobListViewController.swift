@@ -51,10 +51,6 @@ extension JobListViewController: UITableViewDataSource {
 
 extension JobListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let job = CoreFacade.shared.fetchJobs()[indexPath.row]
-        
-        let alert = UIAlertController(title: job.title, message: job.description, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        performSegue(withIdentifier: "showJobDetail", sender: nil)
     }
 }
