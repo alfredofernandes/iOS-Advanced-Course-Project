@@ -36,6 +36,12 @@ public class CompanyController {
         return nil
     }
     
+    public func generateStubCompany() -> Company {
+        let company = Company(withName: "Some name", andEmail: "Some email")
+        
+        return company
+    }
+    
     private func generateStubCompanies() -> [Company] {
         var stubCompanies = [Company]()
         let randomInt = Int(arc4random_uniform(16))
