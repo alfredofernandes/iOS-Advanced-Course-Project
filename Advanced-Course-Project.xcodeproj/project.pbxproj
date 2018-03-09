@@ -20,6 +20,7 @@
 		7946F33B2048524000C62711 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 954A6FFA204719A2003949D4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7946F33C2048528C00C62711 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954A6FFA204719A2003949D4 /* Alamofire.framework */; };
 		794C4C3F2052A56000B158D9 /* JobDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794C4C3E2052A56000B158D9 /* JobDetailViewController.swift */; };
+		794C4C412052AC5600B158D9 /* CompanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794C4C402052AC5600B158D9 /* CompanyDetailViewController.swift */; };
 		796C16C220484EE400722935 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796C16C120484EE400722935 /* Student.swift */; };
 		95769BF8204F60640035B8BF /* CompanyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95769BF7204F60640035B8BF /* CompanyController.swift */; };
 		95A5B7BF20470FCD00445D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A5B7BE20470FCD00445D7C /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 		792881D0204F811300444C9C /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		7946F335204850DC00C62711 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		794C4C3E2052A56000B158D9 /* JobDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailViewController.swift; sourceTree = "<group>"; };
+		794C4C402052AC5600B158D9 /* CompanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailViewController.swift; sourceTree = "<group>"; };
 		796C16C120484EE400722935 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		954A6FFA204719A2003949D4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		95769BF7204F60640035B8BF /* CompanyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				16C46A38204C390D008C74CC /* JobTableCell.swift */,
 				16C46A3C204C3D11008C74CC /* JobListViewController.swift */,
 				794C4C3E2052A56000B158D9 /* JobDetailViewController.swift */,
+				794C4C402052AC5600B158D9 /* CompanyDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				16C46A3A204C390D008C74CC /* JobTableCell.swift in Sources */,
 				16C46A3F204C3EF0008C74CC /* JobController.swift in Sources */,
 				95A5B7D4204711EA00445D7C /* CoreFacade.swift in Sources */,
+				794C4C412052AC5600B158D9 /* CompanyDetailViewController.swift in Sources */,
 				95A5B7D62047124900445D7C /* StudentController.swift in Sources */,
 				95A5B7C120470FCD00445D7C /* ViewController.swift in Sources */,
 				794C4C3F2052A56000B158D9 /* JobDetailViewController.swift in Sources */,
