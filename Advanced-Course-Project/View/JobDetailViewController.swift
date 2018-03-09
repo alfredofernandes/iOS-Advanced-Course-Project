@@ -1,14 +1,14 @@
 //
-//  JobDetailVC.swift
+//  JobDetailViewController.swift
 //  Advanced-Course-Project
 //
-//  Created by Guilherme Crozariol on 2018-03-06.
+//  Created by Guilherme Crozariol on 2018-03-09.
 //  Copyright © 2018 ProDigi-Development. All rights reserved.
 //
 
 import UIKit
 
-class JobDetailVC: UIViewController {
+class JobDetailViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var salaryLabel: UILabel!
