@@ -385,6 +385,17 @@
                         <viewLayoutGuide key="safeArea" id="7ZM-EU-Kkp"/>
                     </view>
                     <navigationItem key="navigationItem" title="Company Detail" id="GxY-oc-T4V"/>
+                    <connections>
+                        <outlet property="contactLabel" destination="Vwg-Ql-nNA" id="uhw-3H-IPG"/>
+                        <outlet property="descriptionLabel" destination="U4d-Tx-4rD" id="wWn-e9-p9D"/>
+                        <outlet property="emailLabel" destination="U39-Y7-RUw" id="F4h-a9-Z10"/>
+                        <outlet property="logoLabel" destination="Jie-Rx-PsV" id="HoD-F4-ZVR"/>
+                        <outlet property="nameLabel" destination="A5J-IS-9BV" id="xag-9G-x5c"/>
+                        <outlet property="photoLabel" destination="4z9-Rh-XFa" id="22V-wd-1tK"/>
+                        <outlet property="sizeLabel" destination="sH5-HE-hvc" id="c8V-eh-oD9"/>
+                        <outlet property="techStackLabel" destination="QDz-yR-eyE" id="pyj-vS-3qs"/>
+                        <outlet property="websiteLabel" destination="3uz-rR-E6J" id="fa8-vj-FoO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eih-0B-Cfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
