@@ -17,6 +17,10 @@ class JobDetailViewController: UIViewController {
     @IBOutlet weak var postingDateLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    @IBAction func companyDetailButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "showCompanyDetail", sender: nil)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
