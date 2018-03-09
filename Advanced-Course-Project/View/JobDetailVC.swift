@@ -19,12 +19,15 @@ class JobDetailVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        titleLabel.text = ""
-        salaryLabel.text = ""
-        benefitsLabel.text = ""
-        startDateLabel.text = ""
-        postingDateLabel.text = ""
-        descriptionLabel.text = ""
+        
+        let job = CoreFacade.shared.getJob()
+        
+        titleLabel.text = job.title
+        salaryLabel.text = job.salary
+        benefitsLabel.text = job.benefits
+        startDateLabel.text = job.startDate
+        postingDateLabel.text = job.postingDate
+        descriptionLabel.text = job.description
     }
     
 }
