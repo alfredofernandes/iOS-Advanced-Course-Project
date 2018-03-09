@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Job List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="JobListViewController" customModule="Advanced_Course_Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +47,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="Rh3-MN-baZ"/>
+                    <navigationItem key="navigationItem" title="Job List" id="Rh3-MN-baZ"/>
                     <connections>
                         <outlet property="jobTable" destination="cAQ-Oy-xrk" id="L3P-Da-P4l"/>
                         <segue destination="HVh-nI-wEJ" kind="show" identifier="showJobDetail" id="zCM-SP-wVr"/>
