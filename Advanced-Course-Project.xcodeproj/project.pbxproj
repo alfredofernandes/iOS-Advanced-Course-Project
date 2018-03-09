@@ -140,9 +140,9 @@
 			children = (
 				95A5B7C720470FCD00445D7C /* LaunchScreen.storyboard */,
 				95A5B7C220470FCD00445D7C /* Main.storyboard */,
-				16C46A3C204C3D11008C74CC /* JobListViewController.swift */,
-				16C46A38204C390D008C74CC /* JobTableCell.swift */,
 				16C46A39204C390D008C74CC /* JobTableCell.xib */,
+				16C46A38204C390D008C74CC /* JobTableCell.swift */,
+				16C46A3C204C3D11008C74CC /* JobListViewController.swift */,
 				794C4C3E2052A56000B158D9 /* JobDetailViewController.swift */,
 			);
 			path = View;

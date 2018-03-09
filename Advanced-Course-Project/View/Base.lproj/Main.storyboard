@@ -50,7 +50,7 @@
                     <navigationItem key="navigationItem" title="Home" id="Rh3-MN-baZ"/>
                     <connections>
                         <outlet property="jobTable" destination="cAQ-Oy-xrk" id="L3P-Da-P4l"/>
-                        <segue destination="HVh-nI-wEJ" kind="show" identifier="showJobDetails" id="zCM-SP-wVr"/>
+                        <segue destination="HVh-nI-wEJ" kind="show" identifier="showJobDetail" id="zCM-SP-wVr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -60,7 +60,7 @@
         <!--Job Details-->
         <scene sceneID="hdd-iy-vYQ">
             <objects>
-                <viewController id="HVh-nI-wEJ" customClass="JobDetailVC" customModule="Advanced_Course_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HVh-nI-wEJ" customClass="JobDetailViewController" customModule="Advanced_Course_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fYh-rO-ZWL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
