@@ -23,12 +23,12 @@ public class Job: Mappable {
     }
     
     public func mapping(map: Map) {
-        objectId    <- map["objectId"]
+        objectId    <- map["id"]//<- map["objectId"]
         title       <- map["title"]
-        salary      <- map["salary"]
-        benefits    <- map["benefits"]
-        startDate   <- map["startDate"]
-        postingDate <- map["postingDate"]
+        //salary      <- map["salary"]
+        //benefits    <- map["benefits"]
+        //startDate   <- map["startDate"]
+        postingDate <- map["created_at"]//<- map["postingDate"]
         description <- map["description"]
     }
     
