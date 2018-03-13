@@ -20,8 +20,8 @@ class CompanyDetailViewController: UIViewController {
     @IBOutlet weak var techStackLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         let company = CoreFacade.shared.getCompany()
         
