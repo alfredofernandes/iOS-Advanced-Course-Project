@@ -19,8 +19,18 @@ class JobListViewController: UIViewController {
         jobTable.delegate = self
         jobTable.dataSource = self
         self.jobTable.register(UINib(nibName: cellNameAndId, bundle: nil), forCellReuseIdentifier: cellNameAndId)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(JobListViewController.updateTableList),
+                                               name: NSNotification.Name(rawValue: kNOTIFICATION_JOB_LIST_CHANGED), object: nil)
+        CoreFacade.shared.fetchJobs()
     }
-
+    
+    @objc func updateTableList() {
+        DispatchQueue.main.async {
+            self.jobTable.reloadData()
+            self.jobTable.contentOffset = .zero
+        }
+    }
 }
 
 extension JobListViewController: UITableViewDataSource {
@@ -29,11 +39,11 @@ extension JobListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return CoreFacade.shared.fetchJobs().count
+        return CoreFacade.shared.getJobList().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath:IndexPath) -> UITableViewCell {
-        let job = CoreFacade.shared.fetchJobs()[indexPath.row]
+        let job = CoreFacade.shared.getJobList()[indexPath.row]
         let rawCell = tableView.dequeueReusableCell(withIdentifier: cellNameAndId)
         
         guard let jobCell = rawCell as? JobTableCell else {
