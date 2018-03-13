@@ -22,6 +22,7 @@
 		794C4C3F2052A56000B158D9 /* JobDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794C4C3E2052A56000B158D9 /* JobDetailViewController.swift */; };
 		794C4C412052AC5600B158D9 /* CompanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794C4C402052AC5600B158D9 /* CompanyDetailViewController.swift */; };
 		796C16C220484EE400722935 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796C16C120484EE400722935 /* Student.swift */; };
+		798499952058819700BA062E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 798499942058819600BA062E /* GoogleService-Info.plist */; };
 		95769BF8204F60640035B8BF /* CompanyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95769BF7204F60640035B8BF /* CompanyController.swift */; };
 		95A5B7BF20470FCD00445D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A5B7BE20470FCD00445D7C /* AppDelegate.swift */; };
 		95A5B7C120470FCD00445D7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A5B7C020470FCD00445D7C /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 		794C4C3E2052A56000B158D9 /* JobDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailViewController.swift; sourceTree = "<group>"; };
 		794C4C402052AC5600B158D9 /* CompanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailViewController.swift; sourceTree = "<group>"; };
 		796C16C120484EE400722935 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		798499942058819600BA062E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		954A6FFA204719A2003949D4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		95769BF7204F60640035B8BF /* CompanyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyController.swift; sourceTree = "<group>"; };
 		95A5B7BB20470FCD00445D7C /* Advanced-Course-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advanced-Course-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 				95A5B7D02047101800445D7C /* View */,
 				95A5B7D12047118F00445D7C /* Controller */,
 				95A5B7CA20470FCD00445D7C /* Info.plist */,
+				798499942058819600BA062E /* GoogleService-Info.plist */,
 				95A5B7BE20470FCD00445D7C /* AppDelegate.swift */,
 				95A5B7C020470FCD00445D7C /* ViewController.swift */,
 				95A5B7C520470FCD00445D7C /* Assets.xcassets */,
@@ -225,6 +228,7 @@
 			files = (
 				16C46A3B204C390D008C74CC /* JobTableCell.xib in Resources */,
 				95A5B7C920470FCD00445D7C /* LaunchScreen.storyboard in Resources */,
+				798499952058819700BA062E /* GoogleService-Info.plist in Resources */,
 				95A5B7C620470FCD00445D7C /* Assets.xcassets in Resources */,
 				95A5B7C420470FCD00445D7C /* Main.storyboard in Resources */,
 			);
