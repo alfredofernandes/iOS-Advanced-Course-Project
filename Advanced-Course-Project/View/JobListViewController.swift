@@ -10,12 +10,14 @@ import UIKit
 
 class JobListViewController: UIViewController {
     @IBOutlet weak var jobTable: UITableView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     fileprivate let cellNameAndId: String = String(describing: JobTableCell.self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        jobTable.isHidden = true
         jobTable.delegate = self
         jobTable.dataSource = self
         self.jobTable.register(UINib(nibName: cellNameAndId, bundle: nil), forCellReuseIdentifier: cellNameAndId)
@@ -29,6 +31,9 @@ class JobListViewController: UIViewController {
         DispatchQueue.main.async {
             self.jobTable.reloadData()
             self.jobTable.contentOffset = .zero
+            
+            self.spinner.stopAnimating()
+            self.jobTable.isHidden = false
         }
     }
 }
