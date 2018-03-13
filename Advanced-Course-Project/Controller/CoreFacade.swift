@@ -32,8 +32,12 @@ public class CoreFacade {
         return self.studentController.stubMethod()
     }
     
-    public func fetchJobs() -> [Job] {
-        return self.jobController.fetchJobs()
+    public func fetchJobs() {
+        self.jobController.fetchJobs()
+    }
+    
+    public func getJobList() -> [Job] {
+        return self.jobController.jobList
     }
     
     public func getJob() -> Job {
