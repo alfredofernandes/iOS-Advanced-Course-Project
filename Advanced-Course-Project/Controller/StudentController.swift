@@ -25,7 +25,7 @@ internal class StudentController {
         let randomInt = Int(arc4random_uniform(16))
 
         for num in 0...randomInt {
-            let student = Student(withName: "\(num)", andEmail: "\(num)@email.com")
+            let student = Student(studentId: 0, name: "\(num)", email: "\(num)@email.com")
             stubStudents.append(student)
         }
         
