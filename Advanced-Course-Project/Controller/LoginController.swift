@@ -19,7 +19,7 @@ internal class LoginController {
         self.token = ""
     }
 
-    public func doLogin() {
+    public func doLogin(onSuccess: @escaping (String) -> Void, onFail: @escaping (Error) -> Void) {
         guard let url = URL(string: loginURL) else {
             print("Couldn't get job list")
             return
@@ -40,15 +40,28 @@ internal class LoginController {
             
             switch response.result {
             case .success:
-                if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                    print("Data: \(utf8Text)") // original server data as UTF8 string
+                if let data = response.data {
+                    guard
+                        let json = try? JSONSerialization.jsonObject(with: data, options: []),
+                        let dictionary = json as? [String: Any],
+                        let idToken = dictionary["idToken"] as? String
+                    else {
+                            print("Failed to get response data as json")
+                            return
+                    }
+                    
+                    self.token = idToken
+                    onSuccess(self.token)
                 }
                 
             case .failure(let error):
                 print("ERROR: \(error.localizedDescription)")
+                
                 if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
                     print("Data: \(utf8Text)") // original server data as UTF8 string
                 }
+                
+                onFail(error)
             }
         }
     }

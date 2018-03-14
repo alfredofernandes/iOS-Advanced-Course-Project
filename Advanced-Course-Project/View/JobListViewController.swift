@@ -25,7 +25,6 @@ class JobListViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(JobListViewController.updateTableList),
                                                name: NSNotification.Name(rawValue: kNOTIFICATION_JOB_LIST_CHANGED), object: nil)
         CoreFacade.shared.fetchJobs()
-        CoreFacade.shared.doLogin()
     }
     
     @objc func updateTableList() {

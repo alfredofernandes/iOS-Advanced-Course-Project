@@ -49,8 +49,4 @@ public class CoreFacade {
     public func getCompany() -> Company {
         return self.companyController.generateStubCompany()
     }
-    
-    public func doLogin() {
-        return self.loginController.doLogin()
-    }
 }
