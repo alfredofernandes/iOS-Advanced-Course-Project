@@ -10,6 +10,7 @@ import ObjectMapper
 
 public class Student: Mappable {
     
+    public private(set) var studentId: Int?
     public private(set) var name: String?
     public private(set) var email: String?
     public private(set) var goal: String?
@@ -32,12 +33,14 @@ public class Student: Mappable {
     }
     
     // Constructor for minimal object
-    internal init(withName name: String, andEmail email: String) {
+    internal init(studentId: Int, name: String, email: String) {
+        self.studentId = studentId
         self.name = name
         self.email = email
     }
 
     public func mapping(map: Map) {
+        studentId       <- map["studentId"]
         name            <- map["name"]
         email           <- map["email"]
         goal            <- map["goal"]
