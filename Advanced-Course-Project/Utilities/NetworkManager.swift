@@ -10,8 +10,21 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
+typealias studentSuccess = (Student) -> Void
+
 class NetworkManager {
     
-    
-    
+    class func fetchStudent(url: String, handler: @escaping studentSuccess) {
+        
+        Alamofire.request(url).validate().responseObject { (response: DataResponse<Student>) in
+
+            switch response.result {
+            case .failure(let error):
+                print(error)
+            case .success(let value):
+                handler(value)
+            }
+            
+        }
+    }
 }
