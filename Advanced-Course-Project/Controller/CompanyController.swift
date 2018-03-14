@@ -36,12 +36,18 @@ public class CompanyController {
         return nil
     }
     
+    public func generateStubCompany() -> Company {
+        let company = Company(companyId: 0, name: "Some name", email: "Some email")
+        
+        return company
+    }
+    
     private func generateStubCompanies() -> [Company] {
         var stubCompanies = [Company]()
         let randomInt = Int(arc4random_uniform(16))
         
         for num in 0...randomInt {
-            let company = Company(withName: "\(num)", andEmail: "\(num)@email.com")
+            let company = Company(companyId: 0, name: "\(num)", email: "\(num)@email.com")
 
             stubCompanies.append(company)
         }
