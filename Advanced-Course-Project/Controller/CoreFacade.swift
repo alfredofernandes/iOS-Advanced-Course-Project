@@ -13,6 +13,7 @@ public class CoreFacade {
     private let jobController: JobController
     private let studentController: StudentController
     private let companyController: CompanyController
+    private let loginController: LoginController
     
     public var listOfStudents: [Student] {
         return self.studentController.students
@@ -25,6 +26,7 @@ public class CoreFacade {
         self.jobController = JobController()
         self.studentController = StudentController()
         self.companyController = CompanyController.shared
+        self.loginController = LoginController()
     }
     
     // MARK: Public Methods
